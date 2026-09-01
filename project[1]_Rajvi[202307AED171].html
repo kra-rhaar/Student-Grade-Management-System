@@ -1,0 +1,100 @@
+<!-- 
+Student Name: Rajvi Krishnaji Rao
+Student ID: 171
+Project 1 - Student Grade Management System
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Grade Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Student Grade Management System</h1>
+
+<!-- input form -->
+<h2>Enter Student Info</h2>
+<form id="studentForm">
+	<label for="name">Student Name:</label>
+	<input type="text" id="name"><br>
+
+	<label for="math">Math Score:</label>
+	<input type="number" id="math"><br>
+
+	<label for="science">Science Score:</label>
+	<input type="number" id="science"><br>
+
+	<label for="english">English Sore:</label>
+	<input type="number" id="english"><br>
+
+	<label for="history">History Score:</label>
+	<input type="number" id="history"><br>
+
+	<button type="button" onclick="addStudent()">Add Student</button>
+</form>
+
+<p id="errorMsg" class="error"></p>
+
+<hr>
+
+<!-- filter section -->
+<h2>Filter Students</h2>
+<label for="filterGrade">Show grade:</label>
+<select id="filterGrade" onchange="displayStudents()">
+	<option value="all">All</option>
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+	<option value="D">D</option>
+	<option value="F">F</option>
+</select>
+
+&nbsp;&nbsp;&nbsp;
+
+<label for="filterAvg">Min average:</label>
+<input type="number" id="filterAvg" value="0" style="width:60px;" onchange="displayStudents()">
+
+<hr>
+
+<!-- table -->
+<h2>Student List</h2>
+<table id="studentTable">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Math</th>
+		<th>Science</th>
+		<th>English</th>
+		<th>History</th>
+		<th>Total</th>
+		<th>Average</th>
+		<th>Grade</th>
+		<th>Delete</th>
+	</tr>
+	</thead>
+	<tbody id="tableBody">
+	<!-- rows get added here by javascript -->
+	</tbody>
+</table>
+
+<!-- summary -->
+<div id="summary">
+	<h3>Class Summary</h3>
+	<p id="totalStudents">Total Students: 0</p>
+	<p id="classAvg">Class Average: 0</p>
+	<p id="highScore">Highest Score: 0</p>
+	<p id="lowScore">Lowest Score: 0</p>
+</div>
+
+<br>
+<button onclick="exportJSON()">Export as JSON</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
