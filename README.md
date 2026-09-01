@@ -1,13 +1,9 @@
 # Student Grade Management System
 
-**Student Name:** Rajvi Krishnaji Rao
-
-**Student ID:** 2023BCSE07AED171
-
-**Project:** Project 1 - Student Grade Management System
-
-**Difficulty Level:** Intermediate
-
+**Student Name:** Rajvi Krishnaji Rao  
+**Student ID:** 2023BCSE07AED171  
+**Project:** Project 1 - Student Grade Management System  
+**Difficulty Level:** Intermediate  
 **Duration:** 2 Hours
 
 ## Description
